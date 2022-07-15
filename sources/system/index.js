@@ -13,17 +13,14 @@ export const system = {
 export const normalize = css`
 	${themes}
 	${colors}
-
 	:root {
 		color-scheme: var(--appearance);
 	}
-
 	*,
 	*::before,
 	*::after {
 		box-sizing: border-box;
 	}
-
 	html {
 		-webkit-text-size-adjust: 100%;
 		-moz-tab-size: 4;
@@ -31,7 +28,6 @@ export const normalize = css`
 		font-size: 62.5%;
 		line-height: 1.5;
 	}
-
 	body {
 		margin: 0;
 		background-color: var(--body-background);
@@ -40,31 +36,24 @@ export const normalize = css`
 		letter-spacing: 0.04rem;
 		color: var(--body-color);
 	}
-
 	h1 {
 		font-size: 3.2rem;
 	}
-
 	h2 {
 		font-size: 2.8rem;
 	}
-
 	h3 {
 		font-size: 2.4rem;
 	}
-
 	h4 {
 		font-size: 2rem;
 	}
-
 	h5 {
 		font-size: 1.6rem;
 	}
-
 	h6 {
 		font-size: 1.2rem;
 	}
-
 	h1,
 	h2,
 	h3,
@@ -74,25 +63,20 @@ export const normalize = css`
 		margin: 0;
 		font-weight: 600;
 	}
-
 	p {
 		margin: 0;
 	}
-
 	hr {
 		height: 0;
 		color: inherit;
 	}
-
 	abbr[title] {
 		text-decoration: underline dotted;
 	}
-
 	b,
 	strong {
 		font-weight: bolder;
 	}
-
 	code,
 	kbd,
 	samp,
@@ -100,11 +84,9 @@ export const normalize = css`
 		font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
 		font-size: 1.6rem;
 	}
-
 	small {
 		font-size: 80%;
 	}
-
 	sub,
 	sup {
 		position: relative;
@@ -112,64 +94,54 @@ export const normalize = css`
 		font-size: 75%;
 		line-height: 0;
 	}
-
 	sub {
 		bottom: -0.25em;
 	}
-
 	sup {
 		top: -0.5em;
 	}
-
 	table {
 		text-indent: 0;
 		border-color: inherit;
 	}
-
 	button,
 	input,
 	optgroup,
 	select,
 	textarea {
+		outline: 0;
 		margin: 0;
+		border: none;
 		font-family: inherit;
 		font-size: 100%;
 		line-height: inherit;
 	}
-
 	button,
 	select {
 		text-transform: none;
 	}
-
 	button,
 	[type='button'],
 	[type='reset'],
 	[type='submit'] {
 		-webkit-appearance: button;
 	}
-
 	::-moz-focus-inner {
 		border-style: none;
 		padding: 0;
 	}
-
 	:-moz-focusring {
 		outline: 1px dotted ButtonText;
 	}
-
 	:-moz-ui-invalid {
 		box-shadow: none;
 	}
-
 	legend {
 		padding: 0;
 	}
-
 	progress {
 		vertical-align: baseline;
 	}
-
 	::-webkit-inner-spin-button,
 	::-webkit-outer-spin-button {
 		height: auto;
